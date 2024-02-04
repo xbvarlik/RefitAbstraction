@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RefitAbstractions.DemoClient.props" />
+</Project>

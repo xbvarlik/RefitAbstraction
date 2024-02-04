@@ -1,0 +1,12 @@
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\bin\Debug\net8.0\Ntt.RefitAbstraction.deps.json
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\bin\Debug\net8.0\Ntt.RefitAbstraction.dll
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\bin\Debug\net8.0\Ntt.RefitAbstraction.pdb
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.csproj.AssemblyReference.cache
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.AssemblyInfoInputs.cache
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.AssemblyInfo.cs
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.csproj.CoreCompileInputs.cache
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.dll
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\refint\Ntt.RefitAbstraction.dll
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\Ntt.RefitAbstraction.pdb
+C:\Users\10131551\RiderProjects\RefitAbstraction\Ntt.RefitAbstraction\obj\Debug\net8.0\ref\Ntt.RefitAbstraction.dll
