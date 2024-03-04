@@ -1,3 +1,4 @@
+using Ntt.Exceptions;
 using Ntt.Exceptions.ExceptionTypes;
 using Ntt.RefitAbstraction.Server;
 using RefitAbstractions.DemoBackend.Models;
@@ -5,9 +6,11 @@ using RefitAbstractions.DemoBackend.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRefitServer();
+builder.Services.AddCustomExceptionHandler();
 
 var app = builder.Build();
 
+app.UseCustomExceptionHandler();
 app.UseRefitServer();
 
 app.MapGet("/", () => "Hello World!");

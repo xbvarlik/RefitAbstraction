@@ -23,6 +23,23 @@ public static class ClientCollectionBuilderExtensions
         return builder;
     }
     
+    public static IRefitClientCollectionBuilder AddClientConfiguration(
+        this IServiceCollection services, 
+        IConfiguration configuration,
+        string settingsName)
+    {
+        var settings = configuration.GetSection(settingsName).Get<ClientSettings>() ?? 
+                       throw new InvalidOperationException("Client settings are not configured.");
+        
+        var builder = new RefitClientCollectionBuilder
+        {
+            Services = services,
+            Settings = settings
+        };
+
+        return builder;
+    }
+    
     public static IRefitClientCollectionBuilder AddClientCollection(
         this IRefitClientCollectionBuilder builder, 
         params Type[] clients)
@@ -101,19 +118,4 @@ public static class ClientCollectionBuilderExtensions
         
         return services;
     }
-    
-    // public static ICollection<Type> GetRefitClients(this IServiceCollection services)
-    // {
-    //     var clients = new List<Type>();
-    //     
-    //     foreach (var service in services)
-    //     {
-    //         if (service.ServiceType.IsGenericType && service.ServiceType.GetGenericTypeDefinition() == typeof(IBaseClient))
-    //         {
-    //             clients.Add(service.ServiceType.GetGenericArguments()[0]);
-    //         }
-    //     }
-    //
-    //     return clients;
-    // }
 }

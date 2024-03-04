@@ -21,6 +21,7 @@ C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\ob
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\RefitAbstractions.DemoClient.csproj.CoreCompileInputs.cache
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\RefitAbstractions.DemoClient.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\RefitAbstractions.DemoClient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\RefitAbstractions.DemoClient.sourcelink.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoClient\obj\Debug\net8.0\staticwebassets\msbuild.RefitAbstractions.DemoClient.Microsoft.AspNetCore.StaticWebAssets.props

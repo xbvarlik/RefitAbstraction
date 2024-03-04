@@ -3,25 +3,20 @@ using Microsoft.AspNetCore.Http;
 
 namespace Ntt.RefitAbstraction.Client.Handlers;
 
+[SuppressMessage("ReSharper", "ReturnValueOfPureMethodIsNotUsed", Justification = "Appending headers to the dictionary does not require return value to be used.")]
 public class HeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : DelegatingHandler
 {
-    private ICollection<Dictionary<string, string>> Headers { get; set; } = [];
+    private Dictionary<string, string>? Headers { get; set; } = [];
     
     [SuppressMessage("ReSharper", "InvertIf")]
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
-        if (Headers is {Count: > 0})
-            FillHeadersFromContext(request);
-        
         return await base.SendAsync(request, cancellationToken);
     }
     
     protected void AddHeader(string key, string value)
     {
-        Headers.Add(new Dictionary<string, string>
-        {
-            { key, value }
-        });
+        Headers?.Append(new KeyValuePair<string, string>(key, value));
     }
 
     protected void AddHeaderFromContext(string contextKey)
@@ -32,10 +27,7 @@ public class HeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : De
             return;
         
         if (httpContext.Request.Headers.TryGetValue(contextKey, out var header))
-            Headers.Add(new Dictionary<string, string>
-            {
-                { contextKey, header.ToString() }
-            });
+            Headers?.Append(new KeyValuePair<string, string>(contextKey, header.ToString()));
     }
 
     protected void AddHeaderFromContext(string contextKey, string requestKey)
@@ -44,12 +36,9 @@ public class HeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : De
 
         if (httpContext is null)
             return;
-        
+
         if (httpContext.Request.Headers.TryGetValue(contextKey, out var value))
-            Headers.Add(new Dictionary<string, string>
-            {
-                { requestKey, value.ToString() }
-            });
+            Headers?.Append(new KeyValuePair<string, string>(contextKey, value.ToString()));
     }
 
     private void FillHeadersFromContext(HttpRequestMessage request)
@@ -59,12 +48,9 @@ public class HeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : De
         if (httpContext is null)
             return;
         
-        foreach (var header in Headers)
+        foreach (var header in Headers!)
         {
-            var key = header.Keys.First();
-            var value = header.Values.First();
-
-            request.Headers.Add(key, httpContext.Request.Headers.TryGetValue(key, out var requestHeader) ? requestHeader.ToString() : value);
+            request.Headers.Add(header.Key, httpContext.Request.Headers.TryGetValue(header.Key, out var requestHeader) ? requestHeader.ToString() : header.Value);
         }
     }
 }

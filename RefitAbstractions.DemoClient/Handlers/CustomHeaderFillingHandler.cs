@@ -3,14 +3,14 @@ using Ntt.RefitAbstraction.Client.Handlers;
 
 namespace RefitAbstractions.DemoClient.Handlers;
 
-public class CustomHeaderFillingHandler : HeaderFillingHandler
+public class CustomHeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : HeaderFillingHandler(httpContextAccessor)
 {
-    
-    public CustomHeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : base(httpContextAccessor)
+    protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
         AddCustomHeaders();
+        return base.SendAsync(request, cancellationToken);
     }
-    
+
     private void AddCustomHeaders()
     {
         AddHeader("CustomHeader", "CustomHeaderValue");

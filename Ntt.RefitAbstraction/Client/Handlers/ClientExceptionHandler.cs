@@ -17,9 +17,6 @@ public class ClientExceptionHandler(IHttpContextAccessor httpContextAccessor) : 
     protected virtual async Task<HttpResponseMessage> HandleErrorAsync(HttpResponseMessage response,
         CancellationToken cancellationToken)
     {
-        if (response.IsSuccessStatusCode)
-            return response;
-        
         var content = await response.Content.ReadAsStringAsync(cancellationToken);
         
         var httpContext = httpContextAccessor.HttpContext;

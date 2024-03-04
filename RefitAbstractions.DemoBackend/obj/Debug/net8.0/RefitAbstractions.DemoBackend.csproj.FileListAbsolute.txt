@@ -5,7 +5,10 @@ C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\b
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\RefitAbstractions.DemoBackend.runtimeconfig.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\RefitAbstractions.DemoBackend.dll
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\RefitAbstractions.DemoBackend.pdb
+C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\CustomExceptionHandler.dll
+C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Refit.dll
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Refit.HttpClientFactory.dll
@@ -16,7 +19,9 @@ C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\o
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.AssemblyInfoInputs.cache
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.AssemblyInfo.cs
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.csproj.CoreCompileInputs.cache
+C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.sourcelink.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\staticwebassets\msbuild.RefitAbstractions.DemoBackend.Microsoft.AspNetCore.StaticWebAssets.props
@@ -31,7 +36,3 @@ C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\o
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.pdb
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.genruntimeconfig.cache
 C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\ref\RefitAbstractions.DemoBackend.dll
-C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\CustomExceptionHandler.dll
-C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\10131551\RiderProjects\RefitAbstraction\RefitAbstractions.DemoBackend\obj\Debug\net8.0\RefitAbstractions.DemoBackend.MvcApplicationPartsAssemblyInfo.cs

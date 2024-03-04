@@ -6,7 +6,7 @@ namespace Ntt.RefitAbstraction.Server.Middleware;
 public class RequestHeaderParserMiddleware<TRequestHeaders>(RequestDelegate next)
 where TRequestHeaders : RequestHeaders
 {
-    public virtual async Task InvokeAsync(HttpContext context, TRequestHeaders requestHeaders)
+    public async Task InvokeAsync(HttpContext context, TRequestHeaders requestHeaders)
     {
         requestHeaders.Headers = context.Request.Headers.ToDictionary(x => x.Key, x => x.Value.ToString());
         await next(context);
