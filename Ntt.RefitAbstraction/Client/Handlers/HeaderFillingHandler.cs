@@ -11,12 +11,21 @@ public class HeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : De
     [SuppressMessage("ReSharper", "InvertIf")]
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
+        request = await PrepareRequestAsync(request, cancellationToken);
+        request = FillHeadersFromContext(request);
         return await base.SendAsync(request, cancellationToken);
     }
-    
+
+    protected virtual Task<HttpRequestMessage> PrepareRequestAsync(HttpRequestMessage request,
+        CancellationToken cancellationToken = default)
+    {
+        return Task.FromResult(request);
+    }
+
     protected void AddHeader(string key, string value)
     {
-        Headers?.Append(new KeyValuePair<string, string>(key, value));
+        Headers ??= new Dictionary<string, string>();
+        Headers[key] = value;
     }
 
     protected void AddHeaderFromContext(string contextKey)
@@ -41,16 +50,27 @@ public class HeaderFillingHandler(IHttpContextAccessor httpContextAccessor) : De
             Headers?.Append(new KeyValuePair<string, string>(contextKey, value.ToString()));
     }
 
-    private void FillHeadersFromContext(HttpRequestMessage request)
+    private HttpRequestMessage FillHeadersFromContext(HttpRequestMessage request)
     {
         var httpContext = httpContextAccessor.HttpContext;
 
         if (httpContext is null)
-            return;
+            return request;
         
         foreach (var header in Headers!)
         {
-            request.Headers.Add(header.Key, httpContext.Request.Headers.TryGetValue(header.Key, out var requestHeader) ? requestHeader.ToString() : header.Value);
+            if (!request.Headers.Contains(header.Key))
+            {
+                request.Headers.Add(header.Key, header.Value);
+            }
+            else
+            {
+                // Decide whether to overwrite or handle duplicates differently
+                request.Headers.Remove(header.Key);
+                request.Headers.Add(header.Key, header.Value);
+            }
         }
+
+        return request;
     }
 }

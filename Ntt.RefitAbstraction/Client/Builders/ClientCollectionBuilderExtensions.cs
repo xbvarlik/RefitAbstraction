@@ -104,18 +104,4 @@ public static class ClientCollectionBuilderExtensions
         
         return builder;
     }
-    
-    public static IServiceCollection AddDefaultClient<TClientSettings>(
-        this IServiceCollection services,
-        IConfiguration configuration,
-        params Type[] clients)
-        where TClientSettings : ClientSettings, new()
-    {
-        services.AddClientConfiguration<TClientSettings>(configuration)
-            .AddClientCollection(clients)
-            .RegisterHttpMessageHandlers(typeof(HeaderFillingHandler), typeof(ClientExceptionHandler))
-            .BuildClient();
-        
-        return services;
-    }
 }

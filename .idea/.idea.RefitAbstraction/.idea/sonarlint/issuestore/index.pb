@@ -47,3 +47,11 @@ l
 <Ntt.RefitAbstraction/Client/Handlers/HeaderFillingHandler.cs,e\1\e1bbd512d86c39ebbe872c4b1999e725adb64b80
 j
 :RefitAbstractions.DemoBackend/appsettings.Development.json,8\d\8dd4dee0800cf60fbd7585550c017f71b1314d21
+m
+=Ntt.RefitAbstraction/Client/Clients/IBaseApiResponseClient.cs,6\4\64c9ad11efc4b1c3c97d7deba9539450583cd66c
+n
+>RefitAbstractions.DemoBackend/Controllers/ProductController.cs,f\1\f1f49db7a706d2e1d786ab9de635b7381fe70d0e
+Š
+ZRefitAbstractions.DemoClient/obj/Debug/net8.0/RefitAbstractions.DemoClient.AssemblyInfo.cs,4\4\44f23b3eb4d2adc6a0211153d1d195e6f37e385a
+Œ
+\RefitAbstractions.DemoBackend/obj/Debug/net8.0/RefitAbstractions.DemoBackend.AssemblyInfo.cs,c\5\c5d46f555040432af7c41e1bd356a40bc0b55d38
