@@ -2,12 +2,13 @@
 using Ntt.Exceptions.ExceptionTypes;
 using Ntt.RefitAbstraction.Server;
 using RefitAbstractions.DemoBackend.Models;
+using RefitAbstractions.DemoBackend.Settings;
 
 namespace RefitAbstractions.DemoBackend.Controllers;
 
 [ApiController]
 [Route("/product")]
-public class ProductController(RequestHeaders requestHeaders) : ControllerBase
+public class ProductController(RefitSettings requestHeaders) : ControllerBase
 {
     [HttpGet("{id}")]
     public ProductViewModel GetProduct(int id)

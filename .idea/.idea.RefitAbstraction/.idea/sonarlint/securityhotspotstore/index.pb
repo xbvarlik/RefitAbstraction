@@ -55,3 +55,7 @@ n
 ZRefitAbstractions.DemoClient/obj/Debug/net8.0/RefitAbstractions.DemoClient.AssemblyInfo.cs,4\4\44f23b3eb4d2adc6a0211153d1d195e6f37e385a
 Œ
 \RefitAbstractions.DemoBackend/obj/Debug/net8.0/RefitAbstractions.DemoBackend.AssemblyInfo.cs,c\5\c5d46f555040432af7c41e1bd356a40bc0b55d38
+g
+7RefitAbstractions.DemoBackend/Settings/RefitSettings.cs,1\b\1bd113d640c8a3f71e249b44e0b91d3a489ef0dc
+
+ORefitAbstractions.DemoBackend/Middleware/CustomRequestHeaderParserMiddleware.cs,0\b\0b3ee33eed043f9779eb8debbc9270f5f71ebf8f

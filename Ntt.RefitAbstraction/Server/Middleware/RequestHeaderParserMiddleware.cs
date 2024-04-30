@@ -4,12 +4,19 @@ using Microsoft.AspNetCore.Http;
 namespace Ntt.RefitAbstraction.Server.Middleware;
 
 public class RequestHeaderParserMiddleware<TRequestHeaders>(RequestDelegate next)
-where TRequestHeaders : RequestHeaders
+where TRequestHeaders : RequestHeaders, new()
 {
     public async Task InvokeAsync(HttpContext context, TRequestHeaders requestHeaders)
     {
-        requestHeaders.Headers = context.Request.Headers.ToDictionary(x => x.Key, x => x.Value.ToString());
+        requestHeaders = await PrepareRequestHeaders(context, requestHeaders);
         await next(context);
+    }
+    
+    protected virtual Task<TRequestHeaders> PrepareRequestHeaders(HttpContext context, TRequestHeaders requestHeaders)
+    {
+        requestHeaders.Headers = context.Request.Headers.ToDictionary(x => x.Key, x => x.Value.ToString());
+        
+        return Task.FromResult(requestHeaders);
     }
     
     protected static T? ParseHeaderValue<T>(HttpContext context, string headerName)

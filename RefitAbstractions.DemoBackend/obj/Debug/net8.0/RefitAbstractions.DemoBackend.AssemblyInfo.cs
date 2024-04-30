@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RefitAbstractions.DemoBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96302de3a7a0423c1484aaf9d28651a7bddbc04b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a4a4d5720f9290f05ff0bf3d9d7479c7e7743bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("RefitAbstractions.DemoBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RefitAbstractions.DemoBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
